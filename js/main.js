@@ -1,5 +1,5 @@
 const links = []
-for (i=1; i <14; i++){
+for (i=1; i < 15; i++){
     links.push({label: 'Week' + i.toString(), url: "weeks/week" + i.toString() + "/index.html"})
 }
 const assignmentList = document.querySelector(".assignment-list");
