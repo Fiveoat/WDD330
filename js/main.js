@@ -4,13 +4,13 @@ for (i=1; i < 15; i++){
 }
 const assignmentList = document.querySelector(".assignment-list");
 for (i = 0; i < links.length; i++) {
-    var weekLine = document.createElement("li");
+    var assignment = document.createElement("li");
     var a = document.createElement("a");
     var link = document.createTextNode(links[i].label);
-    weekLine.classList.add("weeks");
+    assignment.classList.add("weeks");
     a.title = links[i].label;
     a.href = links[i].url;
     a.appendChild(link);
-    weekLine.appendChild(a);
-    assignmentList.appendChild(weekLine);
+    assignment.appendChild(a);
+    assignmentList.appendChild(assignment);
 }
