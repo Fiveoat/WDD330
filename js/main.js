@@ -1,7 +1,6 @@
-let weekList = ['Week1', 'week2', 'week3', 'week4', 'week5', 'week6', 'week7', 'week8', 'week9', 'week10', 'week11', 'week12', 'week13', 'week14']
-const assignmentList = document.querySelector('.assignment-list')
-var weekNav = document.querySelector(".assignment-list");
-var weekDirs = ["weeks/week_1/index.html", "weeks/week_2/index.html", "weeks/week_3/index.html", "weeks/week_4/index.html", "weeks/week_5/index.html", "weeks/week_6/index.html", "weeks/week_7/index.html", "weeks/week_8/index.html", "weeks/week_9/index.html", "weeks/week_10/index.html", "weeks/week_11/index.html", "weeks/week_12/index.html", "weeks/week_13/index.html", "weeks/week_14/index.html", ];
+let weekList = ['Week1', 'Week2', 'Week3', 'Week4', 'Week5', 'Week6', 'Week7', 'Week8', 'Week9', 'Week10', 'Week11', 'Week12', 'Week13', 'Week14']
+let weekDirs = ["weeks/week1/index.html", "weeks/week2/index.html", "weeks/week3/index.html", "weeks/week4/index.html", "weeks/week5/index.html", "weeks/week6/index.html", "weeks/week7/index.html", "weeks/week8/index.html", "weeks/week9/index.html", "weeks/week10/index.html", "weeks/week11/index.html", "weeks/week12/index.html", "weeks/week13/index.html", "weeks/week14/index.html"];
+const assignmentList = document.querySelector(".assignment-list");
 for (i = 0; i < weekList.length; i++) {
     var weekLine = document.createElement("li");
     var a = document.createElement("a");
@@ -11,5 +10,5 @@ for (i = 0; i < weekList.length; i++) {
     a.href = weekDirs[i];
     a.appendChild(link);
     weekLine.appendChild(a);
-    weekNav.appendChild(weekLine);
+    assignmentList.appendChild(weekLine);
 }
