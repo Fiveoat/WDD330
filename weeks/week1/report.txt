@@ -1,0 +1,18 @@
+What did I do since the last meeting?
+
+Well this is the first week, but this week I was able to do quite a few things. I did quite a bit of reading from JavaScript: Novice to Ninja, Exploring ES6, Eloquent JavaScript, & You Don't Know JavaScript. 
+I also flipped through Doing Stuff With Web Things as well. I spent some time creating my te shell of my portfolio. I had to also watch a YouTube video to catch up on JavaScript where I was able to learn &
+apply many of the things that I read in the readings. I used that tutorial on YouTube to help me write the JavaScript code that I used to dynamically create my list of weeks & links to those weeks. That was very fun.
+I also created a git repo, something I have done before, & deployed my master branch to GitHub Pages, something I haven't done before. It is really cool to see it running & it was much eaiser that I had thought it might be.
+I am excited to be able to use this new skill to deploy web applications for small projects or MVP's that I want to show other people.
+
+What am I going to do next?
+
+My plans next are to continue to read & level up on JavaScript. I know that it will be very important through the rest of this class, & I have started to do small bug fixes at my work in JavaScript, though I still feel
+pretty uncomfortable in it. I also want to brush up on my HTML & CSS as well. I know that CSS can get pretty complicated & sometimes very frustrating, so I want to be proficient in it so that it doesn't become a large pain point 
+for this class. 
+
+What are my blockers?
+
+I would say that my only blocker at the moment is getting a better understanding of what is expected of me in this class. My grades are very important to me & I want to make sure that I doing things correctly. 
+I also really think this class will be very valuable in my future career, so I want to make sure that I am learning all that I can as well.
