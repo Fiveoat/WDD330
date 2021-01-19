@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3</title>
+</head>
+
+<body>
+    <h1>Week3</h1>
+    <h3>Notes</h3>
+    <ul>
+        <h6>Javascript: Novice to Ninja : Object methods, "this"</h6>
+        <li>
+            This is similar to self in Python.
+            Don't need to make a class in order to make a method on an object.
+            "In JavaScript, keyword this behaves unlike most other programming languages. It can be used in any
+            function, even if it’s not a method of an object."
+            "If there’s this inside a function, it expects to be called in an object context."
+        </li>
+        <h6>zellwk.com</h6>
+        <li>
+            this in global context: Likely will not use.
+            this in object construction: You can use "this" when creating new objects
+            this in an object method: Use in referening the object in a method call.
+            this in a simple function: this is set to Window by default similar to global use.
+            this in an arrow function: Same as simple function except context stays in object.
+            this in an event listener: this references the element in the event listener.
+            overwrite "this" with bind.
+        </li>
+        <h6>JavaScript: Novice to Ninja: Objects</h6>
+        <li>
+            construct: const spiderman = new Object(); Not as good. Use object literal notation.
+            dot notation property access & square bracket access as well.
+            dot notation for method calls. object.method()
+            find if a key in keys of object:
+            'city' in superman > returns boolean
+            IMPORTANT: FOR IN LOOP
+            example:
+            for(const key in superman) {
+            console.log(key + ": " + superman[key]);
+            }
+            "name: Superman"
+            "real name: Clark Kent"
+            "height: 75"
+            "weight: 235"
+            "hero: true"
+            "villain: false"
+            "allies: Batman,Supergirl,Superboy"
+            "fly: function (){
+            console.log(\"Up, up and away!\");
+            }
+            example 2:
+            for(const key of Object.keys(superman)) {
+            console.log(key);
+            }
+            name
+            real name
+            height
+            weight
+            hero
+            villain
+            allies
+            fly
+            example value access:
+            for(const value of Object.values(superman)) {
+            console.log(value);
+            }
+            Superman
+            Clark Kent
+            75
+            235
+            true
+            false
+            [ 'Batman','Supergirl','Superboy' ]
+            [Function: fly]
+            example .items() like Python:
+            for(const [key,value] of Object.entries(superman)) {
+            console.log(`${key}: ${value}`);
+            }
+            Dot / bracket notation for adding / replacing / deleting properties.
+            ex: superman.city = 'Metropolis'
+            ex: delete superman.city
+            JSON data:
+            JSON.parse() = json.dumps()
+            JSON.stringify() = json.loads()
+            Date = Datetime in Python
+            exmaple: const today = new Date()
+            today.toString() > Get string date.
+            String Regex Methods:
+            .split()
+            .match()
+            .search()
+            .replace()
+        </li>
+        <h6>JavaScript: Novice to Ninja: The Document Object Model (DOM)</h6>
+        <li>
+
+        </li>
+    </ul>
+    <h3>Questions</h3>
+    <ul>
+        <li>
+            "Objects" (Python Dicts) don't have to be classes? Is this different in Python?
+            How are Regexes so fast?
+        </li>
+    </ul>
+</body>
+
+</html>
