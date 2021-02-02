@@ -6,7 +6,7 @@ body {
   }
   main > h1 {
     text-align: center;
-    background-color: indianred;
+    background-color: cadetblue;
     padding: 1em;
     margin-top: 0;
     margin-bottom: -0.5em;
@@ -24,7 +24,7 @@ body {
   }
   .hikeStyles li > h2 {
     text-align: center;
-    background-color: burlywood;
+    background-color: gainsboro;
     margin-bottom: 0.5em;
   }
 
