@@ -1,5 +1,5 @@
 import HikeModel from './hikeModel.js';
-import HikesView from './hikesView.js';
+import HikesView from './hikeView.js';
 export default class HikesController {
   constructor(parentId) {
     this.parentElement = document.getElementById(parentId);
