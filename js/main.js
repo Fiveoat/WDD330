@@ -17,7 +17,7 @@ for (i = 0; i < links.length; i++) {
 
 let assignment = document.createElement("li");
 let a = document.createElement("a");
-let link = document.createTextNode(links[i].label);
+let link = document.createTextNode('TodoApp');
 assignment.classList.add("weeks");
 a.title = 'TodoApp'
 a.href = 'weeks/TodoApp/index.html'
