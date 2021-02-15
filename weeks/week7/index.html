@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7</title>
+</head>
+
+<body>
+    <h1>Week7</h1>
+    <h2>Notes</h2>
+    <ul>
+        <h4>Functional Javascript</h4>
+        <li>Abstraction wraps all the logic away inside the function</li>
+        <li>Functions should, as much as possible, only perform a single operation.</li>
+        <li>Functions in functional programming should simply return a different value, rather than change the value
+            itself</li>
+        <li>Functions can return functions</li>
+        <li>Functions can have properties and methods</li>
+        <li>If a function takes some time to compute a return value, we can save the result in a cache property. Then if
+            the same argument is used again later, we can return the value from the cache, rather than having to compute
+            the result again</li>
+        <li>Callbacks: functions that are passed to other functions as arguments</li>
+        <li>Immediately Invoked Function Expression is a function that is invoked as soon as it’s defined & are a useful
+            way of performing a task while keeping any variables wrapped up within the scope of the function.</li>
+        <li>Example: (function(){
+            var temp = “world”;
+            console.log(“Hello ” + temp);
+            }());
+        </li>A recursive function is one that invokes itself until a certain condition is met.<li>
+
+        <li>Currying is a process that involves the partial application of functions.</li>
+        <li>Example:
+            function multiplier(x,y) {
+            if (y === undefined) {
+            return function(z) {
+            return x * z;
+            }
+            } else {
+            return x * y;
+            }
+            }
+        </li>
+        <h4>Ajax</h4>
+        <li>Ajax is a technique that allows web pages to communicate asynchronously with a server and dynamically
+            updates web pages without reloading. This enables data to be sent and received in the background, as well as
+            portions of a page to be updated in response to user events, while the rest of the program continues to run.
+        </li>
+        <li>Example: Like button on Facebook does not re-load the entire page.</li>
+        <li>Ajax means that JavaScript can be used to request resources from a server on behalf of the client. The
+            resources requested are usually JSON data or small fragments of text or HTML rather than a whole web page.
+        </li>
+        <li>function request(url) {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById(“output”).innerHTML = xhr.responseText;
+            }
+            }</li>
+        <li>function send(hero) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(“POST”, “http://reqr.es/api/users”, true);
+            xhr.setRequestHeader(“Content-Type”, “application/json”);
+            xhr.onreadystatechange = function(){
+            if (xhr.readyState === 4 && xhr.status === 201) {
+            console.log(xhr.responseText);
+            }
+            };
+            }}</li>
+        <li>send(JSON.stringify(hero));</li>
+        <li>FormData</li>
+        <li> var form = document.forms.hero;
+            form.addEventListener(“submit”, submitHero, false);</li>
+        <li>function submitHero(event) {
+            event.preventDefault();
+            var form = event.target;
+            var data = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open(“POST”, form.action, true);
+            xhr.setRequestHeader(“Content-Type”, “application/json”);
+            xhr.onreadystatechange = function(){
+            if (xhr.readyState === 4 && xhr.status === 201) {
+            console.log(xhr.responseText);
+            }
+            };
+            xhr.send(data);
+            }</li>
+        <li>Set Ajak Timeout: xhr.timeout = 5000</li>
+        <li>JSONP or JSON with padding is a very common technique of transporting data as it allows the same-origin
+            policy to be bypassed without using CORS.</li>
+    </ul>
+    <h2>Questions</h2>
+    <ul>
+        <li>What places are normal to cache on the client side? Is it used to prevent needing to make HTTP requests for
+            the same data?</li>
+        <li>How many results are too many to cache?</li>
+        <li>I know recursive functions are cool, but I barely ever find places to use them. Is this normal or am I just
+            bad at using them?</li>
+        <li>Learn how Ajax is used in React.</li>
+    </ul>
+</body>
+
+</html>
