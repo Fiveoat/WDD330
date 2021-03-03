@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9</title>
+</head>
+
+<body>
+    <h1>Week 9</h1>
+    <h2>Notes</h2>
+    <ul>
+        <h4>Browser Object Model</h4>
+        <li>collection of properties and methods that contain information about the browser and computer screen</li>
+        <li>alert(), confirm(), and prompt() are methods of the window.</li>
+        <li>Get user agent window.navigator.userAgent</li>
+        <li>Get current page window.location.href</li>
+        <li>Get protocol window.location.protocol</li>
+        <li>Get url window.location.host</li>
+        <li>Get current pathname window.location.pathname</li>
+        <li>Get querystring params window.location.search</li>
+        <li>window.history.go(1); // goes forward 1 page</li>
+        <li>window.history.go(0); // reloads the current page</li>
+        <li>window.history.go(-1); // goes back 3 pages</li>
+        <li>new window can be opened using the window.open() method</li>
+        <li>Get screen dimensions window.screen.height, window.screen.width, window.screen.availWidth,
+            window.screen.availHeight</li>
+        <h4>Document Object Model</h4>
+        <li>Cookies are small files that are saved locally on a user’s computer.</li>
+        <li>They help the client side computer "remember" user data.</li>
+        <li>How to save a cookie.</li>
+        <li>document.cookie = “name=Superman”</li>
+        <li>List cookies : document.cookie</li>
+        <li>document.cookie = “name=Batman; expires=” + expiryDate.</li>
+        <li>var expiryDate = new Date();
+            var tomorrow = expiryDate.getTime() + 1000 * 60 * 60 * 24;
+            expiryDate.setTime(tomorrow);</li>
+        <li>Deleting Cookies</li>
+        <li>To remove a cookie, simply set it to expire at a time in the past.</li>
+        <h4>HTML5 APIs</h4>
+        <li>Can save data locally. </li>
+        <li> if(window.localStorage) {
+            localStorage.setItem(name, “Walter White”);
+            }
+        </li>
+        <li>Get stored value. </li>
+        <li> if(window.localStorage) {
+            localStorage.getItem(name);
+            }
+        </li>
+        <li>Delete from local storage.</li>
+        <li>if(window.localStorage) {
+            delete localStorage.name;
+            }
+        </li>
+        <li>Clear All.</li>
+        <li>
+            if(window.localStorage) {
+            localStorage.clear();
+            }
+        </li>
+        <li>Audio tags to add audio</li>
+        <li>Video tags to add video</li>
+        <li>Get video
+            video = document.getElementsByTagName(“video”)[0];
+        </li>
+        <li>Video methods:
+            video.pause();
+            video.volume = 90;
+            video.muted = true;
+            video.play();
+        </li>
+    </ul>
+    <h2>Questions</h2>
+    <ul>
+        <li>What are the most common cookies to store?</li>
+        <li>Is it better to try & put your own audio / video or to use a third party like YouTube?</li>
+    </ul>
+</body>
+
+</html>
