@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10</title>
+</head>
+
+<body>
+    <h1>Week 10</h1>
+    <h2>Notes</h2>
+    <ul>
+        <h4>Client-Side Form Validation</h4>
+        <li>Ensure all required form controls are filled out, in the correct format</li>
+        <li>Faster than waiting for server side validation.</li>
+        <li>Still use server side validation for security.</li>
+        <li>Reasons to use validation</li>
+        <li>- We want to get the right data, in the right format.</li>
+        <li>- We want to protect our users' data.</li>
+        <li>- We want to protect ourselves.</li>
+        <li>Two kinds of client-side validation.</li>
+        <li>- Built-In Form Validation</li>
+        <ul>
+            <li>required</li>
+            <li>minlength and maxlength</li>
+            <li>min and max</li>
+            <li>type: data-type: number, etc.</li>
+            <li>pattern: regex match</li>
+        </ul>
+        <li>- JavaScript Validation</li>
+        <ul>
+            <li>patternMismatch</li>
+            <li>tooLong</li>
+            <li>maxLength</li>
+            <li>minLength</li>
+            <li>type</li>
+            <li>Use checkValidity()</li>
+        </ul>
+        <h4>Using Fetch</h4>
+        <li>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline,
+            such as requests and responses</li>
+        <li>fetch()</li>
+        <li>Example:
+            fetch('http://example.com/movies.json')
+            .then(response => response.json())
+            .then(data => console.log(data));
+        </li>
+        <li>For adding credentials: credentials: 'include'</li>
+        <li>You can use fetch for:</li>
+        <li>Uploading JSON data</li>
+        <li>Uploading a file</li>
+        <li>Uploading multiple files</li>
+        <li>Processing a text file line by line</li>
+        <li>Checking that the fetch was successful</li>
+        <li>Supplying your own request object</li>
+        <li>Add headers:
+            const myHeaders = new Headers();
+            myHeaders.append('Content-Type', 'text/plain');</li>
+        <li>Response instances are returned when fetch() promises are resolved.</li>
+        <li>Data included in
+            Response.status
+            Response.statusText
+            Response.ok </li>
+    </ul>
+    <h2>Questions</h2>
+    <ul>
+        <li>Do most people use built in form validation or custom built JS validation?</li>
+        <li>Should I be using fetch or axios for requests?</li>
+        <li>What are the main benefits of each?</li>
+    </ul>
+</body>
+
+</html>
