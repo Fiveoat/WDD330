@@ -1,5 +1,5 @@
 const links = []
-for (i = 1; i < 11; i++) {
+for (i = 1; i < 12; i++) {
     links.push({
         label: 'Week' + i.toString(),
         url: "weeks/week" + i.toString() + "/index.html"
