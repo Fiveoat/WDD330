@@ -28,7 +28,6 @@ a.appendChild(link);
 assignment.appendChild(a);
 assignmentList.appendChild(assignment);
 
-let assignment = document.createElement("li");
 let a = document.createElement("a");
 let link = document.createTextNode('FinalApp');
 assignment.classList.add("weeks");
