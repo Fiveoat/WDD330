@@ -18,21 +18,15 @@ for (i = 0; i < links.length; i++) {
     assignmentList.appendChild(assignment);
 }
 
-let assignment = document.createElement("li");
-let a = document.createElement("a");
-let link = document.createTextNode('TodoApp');
-assignment.classList.add("weeks");
-a.title = 'TodoApp'
-a.href = 'weeks/TodoApp/index.html'
-a.appendChild(link);
-assignment.appendChild(a);
-assignmentList.appendChild(assignment);
-
-let a = document.createElement("a");
-let link = document.createTextNode('FinalApp');
-assignment.classList.add("weeks");
-a.title = 'FinalApp'
-a.href = 'weeks/FinalApp/index.html'
-a.appendChild(link);
-assignment.appendChild(a);
-assignmentList.appendChild(assignment);
+const other_links = ['FinalApp', 'TodoApp']
+for (i = 0; i < other_links.length; i++) {
+    let assignment = document.createElement("li");
+    let a = document.createElement("a");
+    let link = document.createTextNode(other_links[i]);
+    assignment.classList.add("weeks");
+    a.title = other_links[i];
+    a.href = 'weeks/'+ lother_inks[i] + '/index.html'
+    a.appendChild(link);
+    assignment.appendChild(a);
+    assignmentList.appendChild(assignment);
+}
