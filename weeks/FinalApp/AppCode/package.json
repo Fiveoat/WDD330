@@ -1,0 +1,31 @@
+{
+  "name": "nodex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fiveoat/nodex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fiveoat/nodex/issues"
+  },
+  "homepage": "https://github.com/Fiveoat/nodex#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "ejs-lint": "^1.1.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "node-fetch": "^2.6.1",
+    "pg": "^8.5.1"
+  }
+}
