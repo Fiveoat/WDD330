@@ -25,7 +25,7 @@ for (i = 0; i < other_links.length; i++) {
     let link = document.createTextNode(other_links[i]);
     assignment.classList.add("weeks");
     a.title = other_links[i];
-    a.href = 'weeks/'+ lother_inks[i] + '/index.html'
+    a.href = 'weeks/' + other_links[i] + '/index.html'
     a.appendChild(link);
     assignment.appendChild(a);
     assignmentList.appendChild(assignment);
